@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+</head>
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto text-center">
+                <div class="card info">
+                    <div class="card-body">
+                        <h1 id="weather-location" class="h3">Loading...</h1>
+                        <h3 id="weather-description" class="h4">Loading...</h3>
+                        <h3 id="weather-string">Loading...</h3>
+                        <ul class="list-group mt-3">
+                            <li id="weather-humidity" class="list-group-item">Loading...</li>
+                            <li id="weather-wind" class="list-group-item">Loading...</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <form id="w-form">
+                            <div class="form-group">
+                                <input type="text" id="city" class="form-control" placeholder="Ciudad" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="countryCode" class="form-control-sm" placeholder="Codigo de país (Opcional)">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-dark btn-block" id="w-change-btn">
+                                    Buscar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
